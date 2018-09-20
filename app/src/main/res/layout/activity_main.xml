@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeedeb"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tic Tac Toe Game"
+        android:textColor="#c79108"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/gridLayout"
+        app:fontFamily="@font/abeezee" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/board"
+        android:visibility="visible"
+        app:columnCount="3"
+        app:rowCount="3">
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#c79108"
+        android:onClick="resetBtn"
+        android:text="Reset game"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
